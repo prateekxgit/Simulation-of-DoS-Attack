@@ -31,3 +31,11 @@ The experiment was performed for academic and cybersecurity training purposes on
 **Network Setup**:
 * Virtualized environment using VirtualBox/UTM.
 * Host machine running macOS.
+
+# Methodology
+
+**Step 1: Environment Setup**
+* Installed Kali Linux as the Attacking Machine.
+* Installed Windows 7 as the Target Machine.
+* Ensured both machines were connected to the same virtual network.
+* Verified IP addresses of both machines using ifconfig and ipconfig respectively.
