@@ -22,3 +22,12 @@ The experiment was performed for academic and cybersecurity training purposes on
 **Operating Systems**:
 * **Kali Linux** – Attacker Machine.
 * **Windows 11** – Target Machine.
+
+**Tools**:
+* **hping3** – Used for generating custom TCP/UDP packets and simulating packet floods.
+* **Metasploit Framework** – Used for launching auxiliary DoS modules.
+* **Wireshark** – For monitoring and analysing network traffic during the attack.
+
+**Network Setup**:
+* Virtualized environment using VirtualBox/UTM.
+* Host machine running macOS.
