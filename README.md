@@ -5,5 +5,7 @@ The experiment was performed for academic and cybersecurity training purposes on
 
 > ⚠ **Disclaimer**:
 > This project is strictly for **educational purposes**.
+
 > Performing DoS attacks on systems you do not own or without explicit permission is illegal and may result in severe legal consequences.
+
 > Always practice in a safe, offline lab environment.
