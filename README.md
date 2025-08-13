@@ -2,7 +2,7 @@
 
 # Project Overview
 This project demonstrates a **Denial of Service (DoS) attack** in a **controlled virtual lab environment**.
-The attack was simulated using **Kali Linux** (as the attacker) and **Windows 10/11** (as the victim) to analyze how excessive malicious traffic impacts system performance.
+The attack was simulated using **Kali Linux** (as the attacker) and **Windows 7** (as the victim) to analyze how excessive malicious traffic impacts system performance.
 The experiment was performed for academic and cybersecurity training purposes only, and all machines were isolated from the internet to ensure safety and compliance.
 
 > ⚠ **Disclaimer**:
@@ -20,13 +20,13 @@ The experiment was performed for academic and cybersecurity training purposes on
 # Tools & Technologies Used
 
 **Operating Systems**:
-* **Kali Linux** – Attacker Machine.
-* **Windows 11** – Target Machine.
+* `Kali Linux` – Attacker Machine.
+* `Windows 7` – Target Machine.
 
 **Tools**:
-* **hping3** – Used for generating custom TCP/UDP packets and simulating packet floods.
-* **Metasploit Framework** – Used for launching auxiliary DoS modules.
-* **Wireshark** – For monitoring and analysing network traffic during the attack.
+* `hping3` – Used for generating custom TCP/UDP packets and simulating packet floods.
+* `Metasploit Framework` – Used for launching auxiliary DoS modules.
+* `Wireshark` – For monitoring and analysing network traffic during the attack.
 
 **Network Setup**:
 * Virtualized environment using VirtualBox/UTM.
@@ -35,13 +35,13 @@ The experiment was performed for academic and cybersecurity training purposes on
 # Methodology
 
 **Step 1: Environment Setup**
-* Installed **Kali Linux** as the Attacking Machine.
-* Installed **Windows 11** as the Target Machine.
+* Installed `Kali Linux` as the Attacking Machine.
+* Installed `Windows 7` as the Target Machine.
 * Ensured both machines were connected to the same virtual network.
 * Verified IP addresses of both machines using ifconfig and ipconfig respectively.
 
 **Step 2: Disabling the Firewall on the Target**
-* On the Windows 11 machine, the firewall was turned off using:
+* On the `Windows 7` machine, the firewall was turned off using:
   * **Control Panel** → **Windows Firewall** → **Turn Windows Firewall Off**
 * This step was necessary to ensure the DoS traffic could bypass built-in packet filtering.
 
