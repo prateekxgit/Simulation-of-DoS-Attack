@@ -11,11 +11,14 @@ The experiment was performed for academic and cybersecurity training purposes on
 > Always practice in a safe, offline lab environment.
 
 # Objectives
-* Understand the working mechanism of DoS attacks.
-* Simulate attacks using multiple tools:
-  * hping3
-  * Metasploit
-  * Slowloris
-* Analyze the performance degradation in the victim system.
-* Learn how to use network analysis tools to detect DoS patterns.
-* Implement basic mitigation steps.
+* To understand the working mechanism of a DoS attack in a safe, controlled environment.
+* To explore and use different offensive security tools for network flooding.
+* To analyse the network traffic generated during the attack using Wireshark.
+* To study the impact of a DoS attack on system performance.
+* To develop an awareness of mitigation techniques and defensive strategies.
+
+# Tools & Technologies Used
+
+# Operating Systems:
+* **Kali Linux** – Attacker Machine.
+* **Windows 11** – Target Machine.
