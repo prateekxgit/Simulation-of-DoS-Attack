@@ -19,6 +19,6 @@ The experiment was performed for academic and cybersecurity training purposes on
 
 # Tools & Technologies Used
 
-# Operating Systems:
+**Operating Systems**:
 * **Kali Linux** – Attacker Machine.
 * **Windows 11** – Target Machine.
