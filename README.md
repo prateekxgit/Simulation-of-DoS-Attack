@@ -45,4 +45,17 @@ The experiment was performed for academic and cybersecurity training purposes on
   * **Control Panel** → **Windows Firewall** → **Turn Windows Firewall Off**
 * This step was necessary to ensure the DoS traffic could bypass built-in packet filtering.
 
+**Step 3: Pre-Attack Analysis**
+* Verified network connectivity between attacker and victim using ping command.
+* Recorded normal network traffic patterns using Wireshark for baseline analysis.
 
+**Step 4: Performing DoS Attack Using hping3**
+Two different types of flooding techniques were tested:
+- i. **TCP SYN Flood on Port 135**
+      * Identified the target’s IP address, e.g., 192.168.1.105.
+      * Launched a TCP SYN flood attack using hping3:
+      * ```hping3 -S <victim-ip> -p 135 --flood```
+      * `-S` → Sends TCP packets with the SYN flag set.
+      * `-p` 135 → Targets port 135 (commonly used by Microsoft RPC service).
+      * `--flood` → Sends packets as fast as possible without waiting for replies.
+      * **Purpose** → This simulates a SYN Flood DoS attack, overwhelming the TCP handshake process on the target system.
