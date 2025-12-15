@@ -1,4 +1,4 @@
-₹# Simulation of DoS (Denial of Service) Attack
+# Simulation of DoS (Denial of Service) Attack
 
 # Project Overview
 This project demonstrates a **Denial of Service (DoS) attack** in a **controlled virtual lab environment**.
