@@ -87,3 +87,4 @@ Observed **CPU usage reaching 100%** on the target machine, causing freezing and
      ```bash
    use auxiliary/dos/tcp/synflood
    ```
+- iii. Set target IP and port:
