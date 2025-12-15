@@ -1,4 +1,4 @@
-# Simulation of DoS (Denial of Service) Attack
+₹# Simulation of DoS (Denial of Service) Attack
 
 # Project Overview
 This project demonstrates a **Denial of Service (DoS) attack** in a **controlled virtual lab environment**.
@@ -90,7 +90,11 @@ Observed **CPU usage reaching 100%** on the target machine, causing freezing and
 - iii. Set target IP and port:
      ```bash
     set RHOST 192.168.1.105
+    ```
+     ```bash
     set RPORT 80
+    ```
+     ```bash
     run
     ```
 - iv. Observed similar system freeze on the target.
