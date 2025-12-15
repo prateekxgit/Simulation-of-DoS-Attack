@@ -79,11 +79,11 @@ Observed **CPU usage reaching 100%** on the target machine, causing freezing and
 
 **Step 5: Performing the Attack Using Metasploit**
 
-i. Opened Metasploit console:
-   ```bash
+- i. Opened Metasploit console:
+     ```bash
     msfconsole
     ```
- ii. Selected a DoS auxiliary module:
-```bash
+- ii. Selected a DoS auxiliary module:
+     ```bash
    use auxiliary/dos/tcp/synflood
    ```
