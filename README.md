@@ -99,3 +99,12 @@ Observed **CPU usage reaching 100%** on the target machine, causing freezing and
 * **Wireshark** was run on Kali Linux to monitor outgoing packet flow.
 * Observed high CPU usage on the Windows 7 machine (100%), causing severe lag and unresponsiveness.
 
+# Observations
+
+* CPU utilization on the target reached **100%**, freezing the display.
+* The system became unresponsive, with mouse and keyboard lag.
+* Network latency increased significantly; legitimate requests failed.
+* In Wireshark, a massive volume of SYN packets from the attacker was recorded.
+* Even though **physical memory usage** was low (~18%), CPU saturation caused the crash.
+* Proving DoS primarily affected CPU/network stack.
+
